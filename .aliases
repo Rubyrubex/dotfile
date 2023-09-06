@@ -1,0 +1,4 @@
+alias lsa='ls -a'
+alias lla='ll -a'
+alias c='clear'
+alias grepc='grep -color=always'
