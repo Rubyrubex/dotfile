@@ -1,6 +1,6 @@
-if -f /home/ruby/dotfile/README.md;
-then 
-  echo "exists"
-else
-  echo "fails"
-fi
+
+mkdir ~/bin ~/cegep ~/projet;
+
+
+sudo apt install git neovim gcc gdb python3 python3-pip python3-venv;
+
