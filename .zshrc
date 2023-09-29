@@ -1,16 +1,18 @@
-echo "Bienvenue"
-echo "Rubyrubex"
+echo "Bienvenue $USER"
 
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 plugins=(git zsh-autosuggestions dirhistory docker)
 
-#Je n'ai pas reussi a faire fonctionner le PS1
-#Ce morceau retourne une erreur et fait disparaitre le PS1
-#export PS1= $PS1:'[%*] %M@%d'
+#user = $USER
+#current_user = $(whoami)
+
+#if [ $user == $current_user ]; then
+ # export PS1 = '[%*] %M@%d'
+#fi
 
 export PATH=$PATH:/bin
 
 source $ZSH/oh-my-zsh.sh
-source ./.aliases
-source ./.functions
+source ./dotfile/.aliases
+source ./dotfile/.functions

@@ -13,3 +13,7 @@ vimtouch(){
 mygrep(){
   grep -i "$1"
 }
+
+comp(){
+  gcc -o "${1%.*}" "$1"
+}
